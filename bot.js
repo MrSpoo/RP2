@@ -388,7 +388,7 @@ exports.start = function(SETUP) {
     }
   });
 
-  bot.login(BOT_TOKEN).then(null).catch(() => {
+  bot.login(process.env.token).then(null).catch(() => {
     log(LOG_LEVELS.ERROR,'Unable to login check your login token');
     console.error(e);
     process.exit(1);
