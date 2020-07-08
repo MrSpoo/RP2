@@ -158,9 +158,9 @@ exports.start = function(SETUP) {
   const UpdateEmbed = function() {
     let dot = TICK_N % 2 === 0 ? 'Roofstad' : 'Roleplay';
     let embed = new Discord.RichEmbed()
-    .setAuthor("ISRP Server Status", "https://cdn.discordapp.com/attachments/725412251586134068/729944448984809543/logo.png")
+    .setAuthor("NTRP Server Status", "https://cdn.discordapp.com/attachments/659776225212104704/730258741907423262/make-you-a-fivem-server-logo.jpg")
     .setColor(0x2894C2)
-    .setFooter(TICK_N % 2 === 0 ? '⚪ ISRP' : '⚫ ISRP')
+    .setFooter(TICK_N % 2 === 0 ? '⚪ NTRP' : '⚫ NTRP')
     .setTimestamp(new Date())
     .addField('\n\u200b\nHow can you join the server? ',' You can join the ISRP test server by entering **103.251.219.84:30120** at Direct Connect. At the bottom is the server status to see how many people are online and in the queue. This system is made by[Mr_Spooky_](https://github.com/)\n\u200b\n',false)
     if (STATUS !== undefined)
@@ -251,7 +251,7 @@ exports.start = function(SETUP) {
   bot.on('ready',() => {
     log(LOG_LEVELS.INFO,'Started...');
     // bot.user.setGame('Roofstad', 'https://www.twitch.tv/RoqueTV');
-    bot.user.setActivity('ISRP',{'url':'https://www.twitch.tv/RoqueTV','type':'STREAMING'});
+    bot.user.setActivity('NIGHT TOWN ROLE PLAY',{'url':'https://www.twitch.tv/RoqueTV','type':'STREAMING'});
     bot.generateInvite(['ADMINISTRATOR']).then((link) => {
       log(LOG_LEVELS.INFO,`Invite URL - ${link}`);
     }).catch(null);
