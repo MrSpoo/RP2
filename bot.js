@@ -162,7 +162,7 @@ exports.start = function(SETUP) {
     .setColor(0x2894C2)
     .setFooter(TICK_N % 2 === 0 ? '⚪ NTRP' : '⚫ NTRP')
     .setTimestamp(new Date())
-    .addField('\n\u200b\nHow can you join the server? ',' You can join the ISRP test server by entering **103.251.219.84:30120** at Direct Connect. At the bottom is the server status to see how many people are online and in the queue. This system is made by[Mr_Spooky_](https://github.com/)\n\u200b\n',false)
+    .addField('\n\u200b\nHow can you join the server? ',' You can join the NTRP test server by entering **103.251.219.84:30120** at Direct Connect. At the bottom is the server status to see how many people are online and in the queue. This system is made by[Mr_Spooky_](https://github.com/)\n\u200b\n',false)
     if (STATUS !== undefined)
     {
       embed.addField(':warning: Actuele server status:',`${STATUS}\n\u200b\n`);
